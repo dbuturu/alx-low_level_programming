@@ -3,7 +3,7 @@
 /*
  * main - main function
  *
- * the main function
+ * Description: the main function
  * returns 0
  */
 
