@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -fpreprocessed -dD -E main.c
+gcc -fpreprocessed -dD -E main.c > main.c
