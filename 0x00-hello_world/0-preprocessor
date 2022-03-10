@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -fpreprocessed -dD -E main.c > main.c
+cp main.c mainc.c && gcc -fpreprocessed -dD -E mainc.c --output main.c
