@@ -4,6 +4,7 @@
  * main - main function
  *
  * Description: the main function
+ * puts text to stout
  * returns 0
  */
 
