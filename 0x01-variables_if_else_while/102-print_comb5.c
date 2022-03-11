@@ -6,7 +6,7 @@
  * Description: the main function
  * puts text to stout.
  * But you're totally free to use several lines to properly
- * Return: 0
+ * Return: 1
  */
 
 int main(void)
@@ -30,6 +30,6 @@ int main(void)
 					}
 				}
 	putchar('\n');
-	return (0);
+	return (1);
 }
 
