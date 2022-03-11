@@ -17,17 +17,18 @@ int main(void)
 		for (y = 0; y <= 9; ++y)
 			for (i = 0; i <= 9; ++i)
 				for (j = 0; j <= 9; ++j)
-				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(x + '0');
-					putchar(y + '0');
-					if ((x == 9) && (y == 9) && (i == 9) && (j == 8))
-						break;
-					putchar(' ');
-					putchar(',');
-				}
+					if (j<y)
+					{
+						putchar(i + '0');
+						putchar(j + '0');
+						putchar(' ');
+						putchar(x + '0');
+						putchar(y + '0');
+						if ((x == 9) && (y == 9) && (i == 9) && (j == 8))
+							break;
+						putchar(' ');
+						putchar(',');
+					}
 	putchar('\n');
 	return (0);
 }
