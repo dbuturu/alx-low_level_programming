@@ -17,7 +17,7 @@ int main(void)
 		for (y = 0; y <= 9; ++y)
 			for (i = 0; i <= 9; ++i)
 				for (j = 0; j <= 9; ++j)
-					if (j<y)
+					if (i < x || (i == x && j < y))
 					{
 						putchar(i + '0');
 						putchar(j + '0');
