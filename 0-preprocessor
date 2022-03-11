@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc -fpreprocessed -dD -E main.c
