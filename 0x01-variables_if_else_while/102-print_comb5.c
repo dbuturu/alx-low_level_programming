@@ -23,12 +23,10 @@ int main(void)
 					putchar(' ');
 					putchar(x + '0');
 					putchar(y + '0');
-
-					if (!((x == 9) && (y == 9) && (i == 8) && (j == 9)))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					if ((x == 9) && (y == 9) && (i == 9) && (j == 8))
+						break;
+					putchar(' ');
+					putchar(',');
 				}
 	putchar('\n');
 	return (0);
