@@ -29,7 +29,7 @@ int main(void)
 						putchar(' ');
 						putchar(',');
 					}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
 
