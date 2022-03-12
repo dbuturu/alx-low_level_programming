@@ -30,6 +30,7 @@ int main(void)
 						putchar(',');
 					}
 	putchar('\n');
+	putchar(99);
 	return (0);
 }
 
