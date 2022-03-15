@@ -5,6 +5,7 @@
  * _islower- _islower function
  *
  * Description: the _islower function
+ * Parameter: char c
  * Return: int islower
  */
 
