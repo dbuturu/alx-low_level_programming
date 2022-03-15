@@ -3,5 +3,5 @@ int print_alphabet(void);
 int print_alphabet_x10(void);
 int _islower(char c);
 int _isalpha(char c);
-int _putchar(int i);
+char _putchar(int i);
 
