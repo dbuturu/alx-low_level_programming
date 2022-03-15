@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * main - main function
+ * _abs - _abs function
  *
- * Description: the main function
+ * Description: the _abs function
  * puts text to stout.
  * @i: int i
  * Return: 0
