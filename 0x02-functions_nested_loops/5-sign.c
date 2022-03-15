@@ -12,8 +12,8 @@ int print_sign(int i)
 {
 	if (i < 0)
 	{
-		_putchar('+');
-		return (1);
+		_putchar('-');
+		return (-1);
 	}
 	else if (i == 0)
 	{
@@ -22,8 +22,8 @@ int print_sign(int i)
 	}
 	else
 	{
-		_putchar('-');
-		return (-1);
+		_putchar('+');
+		return (1);
 	}
 }
 
