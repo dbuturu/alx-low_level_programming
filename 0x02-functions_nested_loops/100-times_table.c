@@ -21,7 +21,10 @@ void print_times_table(int n)
 			{
 				z = y * x;
 				if (y == 0)
+				{
 					printf("%d", 0);
+					continue;
+				}
 				if (z < 10)
 				{
 					printf(",   %d", z);
