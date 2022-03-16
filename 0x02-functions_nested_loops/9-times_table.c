@@ -21,14 +21,15 @@ void times_table(void)
 			if (y != 0)
 			{
 				_putchar(',');
-				if (z<10){
+				if (z < 10)
+				{
 					_putchar(' ');
 				}
 				_putchar(' ');
 			}
 			if (z < 10)
 			{
-				_putchar(z +'0');
+				_putchar(z + '0');
 			}
 			else
 			{
