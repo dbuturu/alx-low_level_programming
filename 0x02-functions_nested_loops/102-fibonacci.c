@@ -7,17 +7,18 @@
  */
 int main(void)
 {
-	int i, fibonacci_0, fibonacci_1, fibonacci_2;
+	int i;
+	long fibonacci_0, fibonacci_1, fibonacci_2;
 
 	fibonacci_0 = 1;
 	fibonacci_1 = 2;
 	fibonacci_2 = 0;
-	for (i = 0; i <= 50; ++i)
+	for (i = 0; i < 50; ++i)
 	{
 		fibonacci_2 = fibonacci_0 + fibonacci_1;
 		if (fibonacci_0 == 1)
-			printf("%d", fibonacci_0);
-		printf(", %d", fibonacci_0);
+			printf("%li", fibonacci_0);
+		printf(", %li", fibonacci_0);
 		fibonacci_0 = fibonacci_1;
 		fibonacci_1 = fibonacci_2;
 	}
