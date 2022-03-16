@@ -24,6 +24,6 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
-	fprintf(stderr,"Anything");
+	fprintf(stderr, "Anything");
 }
 
