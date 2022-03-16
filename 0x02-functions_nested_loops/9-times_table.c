@@ -18,6 +18,14 @@ void times_table(void)
 		for (y = 0; y < 10; ++y)
 		{
 			z = y * x;
+			if (y != 0)
+			{
+				_putchar(',');
+				if (z<10){
+					_putchar(' ');
+				}
+				_putchar(' ');
+			}
 			if (z < 10)
 			{
 				_putchar(z +'0');
@@ -28,14 +36,6 @@ void times_table(void)
 				ones = (z % 10);
 				_putchar(tens + '0');
 				_putchar(ones + '0');
-			}
-			if (y != 9)
-			{
-				_putchar(',');
-				if (z < 10){
-					_putchar(' ');
-				}
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
