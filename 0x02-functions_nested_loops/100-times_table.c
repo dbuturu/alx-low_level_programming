@@ -1,53 +1,37 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
- * times_table - times_table function
+ * print_times_table - print_times_table function
  *
- * Description: the times_table function
+ * Description: the print_times_table function
  * puts text to stout.
+ * @n: int n
  * Return: void
  */
 
 void print_times_table(int n)
 {
-	int x, y, z, hundreds, tens, ones;
+	int x, y, z;
 
 	if (n >= 0 && n <= 15)
-		for (x = 0; x < n; ++x)
+		for (x = 0; x <= n; ++x)
 		{
-			for (y = 0; y < n; ++y)
+			for (y = 0; y <= n; ++y)
 			{
 				z = y * x;
-				if (y != 0)
-				{
-					_putchar(',');
-					if (z < 10)
-					{
-						_putchar(' ');
-						_putchar(' ');
-					} else if (z < 100)
-					{
-						_putchar(' ');
-					}
-					_putchar(' ');
-				}
+				if (y == 0)
+					printf("%d", 0);
 				if (z < 10)
 				{
-					_putchar(z + '0');
+					printf(",   %d", z);
+
 				} else if (z < 100)
 				{
-					tens = (z / 10);
-					ones = (z % 10);
-					_putchar(tens + '0');
-					_putchar(ones + '0');
+					printf(",  %d", z);
 				} else
 				{
-					hundreds = (z / 100);
-					tens = z / 10 % 10;
-					ones = (z % 10);
-					_putchar(hundreds + '0');
-					_putchar(tens + '0');
-					_putchar(ones + '0');
+					printf(", %d", z);
 				}
 			}
 			_putchar('\n');
