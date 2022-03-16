@@ -5,8 +5,7 @@
  *
  * Description: the times_table function
  * puts text to stout.
- * @i: int i
- * Return: last_digit
+ * Return: void
  */
 
 void times_table(void)
