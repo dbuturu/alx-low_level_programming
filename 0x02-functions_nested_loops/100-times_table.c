@@ -37,7 +37,8 @@ void print_times_table(int n)
 					printf(", %d", z);
 				}
 			}
-			_putchar('\n');
+			putchar('\n');
+
 		}
 }
 
