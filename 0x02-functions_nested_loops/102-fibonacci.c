@@ -16,8 +16,10 @@ int main(void)
 	for (i = 0; i < 50; ++i)
 	{
 		fibonacci_2 = fibonacci_0 + fibonacci_1;
-
-		printf(", %li", fibonacci_0);
+		if (fibonacci_0 == 1)
+			printf("%li", fibonacci_0);
+		else
+			printf(", %li", fibonacci_0);
 		fibonacci_0 = fibonacci_1;
 		fibonacci_1 = fibonacci_2;
 	}
