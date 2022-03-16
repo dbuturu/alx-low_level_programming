@@ -5,14 +5,20 @@
  *
  * Return: Always 0.
  */
-int main(void) {
-  int i, *fibonacci;
+int main(void)
+{
+	int i, fibonacci_0, fibonacci_1, fibonacci_2;
 
-  fibonacci = [ 1, 2 ];
-  for (i = 0; i <= 50; ++i) {
-    fibonacci[i + 2] = fibonacci[i] + fibonacci[i + 1];
-    printf("%d", fibonacci[i]);
-  }
-  printf("%d\n", sum);
-  return (0);
+	fibonacci_0 = 1;
+	fibonacci_1 = 2;
+	fibonacci_2 = 0;
+	for (i = 0; i <= 50; ++i)
+	{
+		fibonacci_2 = fibonacci_0 + fibonacci_1;
+		printf("%d ", fibonacci_0);
+		fibonacci_0 = fibonacci_1;
+		fibonacci_1 = fibonacci_2;
+	}
+	return (0);
 }
+
