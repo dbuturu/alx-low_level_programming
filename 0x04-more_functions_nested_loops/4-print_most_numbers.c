@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_most_number - print_most_numbers function
+ * print_most_numbers - print_most_numbers function
  *
  * Description: the print_most_numbers function
  * puts text to stout.
