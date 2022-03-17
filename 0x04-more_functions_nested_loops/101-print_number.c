@@ -6,6 +6,7 @@
  *
  * Description: the print_number function
  * puts text to stout.
+ * @n: int n
  * Return: 0
  */
 
