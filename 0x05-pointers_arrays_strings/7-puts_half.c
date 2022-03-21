@@ -12,9 +12,12 @@ void puts_half(char *str)
 {
 	int i, n;
 
-	n = ((int)strlen(str)) / 2;
+	n = ((int)strlen(str));
 	if (n % 2 == 1)
+	{
 		i = (n - 1) / 2;
+		i = n - i;
+	}
 	else
 		i = n / 2;
 
