@@ -2,9 +2,9 @@
 #include <string.h>
 
 /**
- * _puts- print str
+ * rev_string- rev string
  *
- * @str: char *s
+ * @s: char *s
  * Return: void
  */
 
