@@ -2,8 +2,9 @@
 #include <string.h>
 
 /**
- * main - check the code
+ * _atoi - returns numbers from string
  *
+ * @s: char *s
  * Return: Always 0.
  */
 
