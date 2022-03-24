@@ -3,20 +3,20 @@
 #include <string.h>
 
 /**
- * *_strcat - concat string.
+ * *_strcmp - compare string.
  *
- * @src: The source.
- * @dest: The destination.
+ * @s1: The first string.
+ * @s2: The second string.
  * Return: The pointer to dest.
  */
 
 int _strcmp(char *s1, char *s2)
 {
-    while(*s1 && (*s1 == *s2))
-    {
-        s1++;
-        s2++;
-    }
-    return ((unsigned int)*s1 - (unsigned int)*s2);
+	while (*s1 && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+	}
+	return ((unsigned int)*s1 - (unsigned int)*s2);
 }
 
