@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * *reverse_array - reverse array.
+ * *infinite_add - infinite add.
  *
  * @n1: The destination.
  * @n2: The destination.
