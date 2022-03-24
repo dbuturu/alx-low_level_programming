@@ -3,10 +3,11 @@
 #include <string.h>
 
 /**
- * *_strcat - concat string.
+ * *_strncat - concat string to nth src str.
  *
  * @src: The source.
  * @dest: The destination.
+ * @n: The length of source used.
  * Return: The pointer to dest.
  */
 
