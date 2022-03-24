@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * *cap_string - cap string.
+ * *rot13 - rot13 encoder.
  *
  * @s: The input string.
- * Return: The pointer to dest.
+ * Return: The output srting.
  */
 char *rot13(char *s)
 {
