@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * *_strcat - concat string.
+ * *reverse_array - reverse array.
  *
  * @a: The source.
  * @n: The destination.
