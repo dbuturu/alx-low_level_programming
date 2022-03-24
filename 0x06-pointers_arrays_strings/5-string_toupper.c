@@ -3,10 +3,9 @@
 #include <string.h>
 
 /**
- * *reverse_array - reverse array.
+ *  *string_toupper- string to upper case.
  *
- * @a: The source.
- * @n: The destination.
+ * @s: The input string.
  * Return: The pointer to dest.
  */
 
