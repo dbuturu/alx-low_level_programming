@@ -4,8 +4,8 @@
  * wildcmp - Compares two strings and returns 1 if the strings can be
  * considered identical, otherwise return 0.
  *
- * @s1: The first string to be compared.
- * @s2: The second string to be compared - may contain wildcards.
+ * @s: The first string to be compared.
+ * @pat: The second string to be compared - may contain wildcards.
  * Return:1 if the strings can be considered identical, otherwise return 0.
  */
 int wildcmp(char *s, char *pat)
