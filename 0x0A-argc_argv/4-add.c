@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 			for (j = 0; j < strlen(x); j++)
 			{
-				if (48 > x[j] || x[j] > 57)
+				if (x[j] < 48 || x[j] > 57)
 				{
 					printf("Error\n");
 					return (1);
