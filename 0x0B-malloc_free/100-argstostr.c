@@ -2,14 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * argstostr - main entry
- * @ac: int input
- * @av: double pointer array
- * Return: 0
+ * argstostr - concatenates all the arguments of your program.
+ *
+ * @ac: The amount of *av.
+ * @av: The double pointer array.
+ * Return: a pointer to a new string, or NULL if it fails.
  */
 char *argstostr(int ac, char **av)
 {
-	int i, n, r = 0, l = 0;
+	int i, j, n = 0, l = 0;
 	char *str;
 
 	if (ac == 0 || av == NULL)
@@ -25,10 +26,10 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		for (n = 0; av[i][n]; n++, r++)
-			str[r] = av[i][n];
-		if (str[r] == '\0')
-			str[r++] = '\n';
+		for (j = 0; av[i][j]; j++, n++)
+			str[n] = av[i][j];
+		if (str[n] == '\0')
+			str[n++] = '\n';
 	}
 	return (str);
 }
