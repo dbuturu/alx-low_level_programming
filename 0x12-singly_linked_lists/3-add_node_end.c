@@ -10,10 +10,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t  *new_node_end = malloc(sizeof(list_t));
 	list_t *p = *head;
-	int j;
 
-	while (str[j++])
-		;
 	if (new_node_end)
 	{
 		new_node_end->str = strdup(str);
