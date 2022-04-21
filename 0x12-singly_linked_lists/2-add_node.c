@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * add_node - Adds a new node at the beginning of a list_t list.
- * @head: Pointer to head of the linked list
+ * @head: The head of the list_t list.
  * @str: String needs to be duplicated
  * Return: the address of the new element, or NULL if it failed.
  */
