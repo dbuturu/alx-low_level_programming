@@ -6,46 +6,37 @@
  *@n: the value of the new node
  *Return: address of the new node, NULL if failed
  */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *copy;
 	dlistint_t *new;
 	unsigned int nodes = 0;
-	unsigned int counter = 0;
 
-	if (!head)
-		return (NULL);
 	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
+	if (new == NULL || h == NULL)
 		return (NULL);
+
 	new->n = n;
-	copy = *head;
-	while (copy)
+	new->next = NULL;
+
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+
+	while (nodes < idx && copy != NULL)
 	{
+		if (nodes == idx - 1)
+		{
+			if (copy->next == NULL)
+				return (add_dnodeint_end(h, n));
+			new->next = copy->next;
+			new->prev = copy;
+			copy->next->prev = new;
+			copy->next = new;
+			return (new);
+		}
+		copy = copy->next;
 		nodes++;
-		copy = copy->next;
 	}
 
-	if (nodes < idx)
-	{
-		free(new);
-		return (NULL);
-	}
-
-	copy = *head;
-	if (counter == idx)
-	{
-		new->next = *head;
-		*head = new;
-		return (*head);
-	}
-	while (counter != idx - 1)
-	{
-		copy = copy->next;
-		counter++;
-	}
-	new->next = copy->next;
-	copy->next = new;
-	return (new);
-}
+	return (NULL);}
 
