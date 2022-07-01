@@ -2,10 +2,8 @@
 #include <stdlib.h>
 
 /**
- * hash_table_delete - Deletes a hash table
- * @ht: The hash table
- *
- * Return: void
+ * hash_table_delete - Deletes a hash table.
+ * @ht: The hash table.
  */
 void
 hash_table_delete(hash_table_t *ht)
