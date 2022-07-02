@@ -41,7 +41,8 @@ shash_table_t *shash_table_create(unsigned long int size)
  *
  * Return: void
  */
-static void _shash_table_insert_sorted(shash_table_t *ht, shash_node_t *new_node)
+static void _shash_table_insert_sorted
+(shash_table_t *ht, shash_node_t *new_node)
 {
 	shash_node_t *cursor = NULL, *cursor_prev = NULL;
 
